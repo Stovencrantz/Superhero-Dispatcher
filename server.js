@@ -1,7 +1,7 @@
 // Dependencies
 // =============================================================
 var express = require("express");
-var api = require("./controllers/api-controller.js");
+var api = require("./app/controllers/api-controller.js");
 // Sets up the Express App
 // =============================================================
 var app = express();

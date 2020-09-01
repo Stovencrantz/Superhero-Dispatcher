@@ -26,7 +26,7 @@ $("#searchBtn").on("click", (event) => {
       url: baseUrl + superFinal,
       method: "GET",
     }).then(function (res) {
-      console.log(("res: ", res));
+      // console.log(("res: ", res));
     });
   }
 });
