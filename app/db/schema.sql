@@ -11,6 +11,7 @@ create table heroes(
   durability int not null,
   power int not null,
   combat int not null,
+  totalPower int not null,
   alignment varchar(50),
   img_url varchar(1000),
 
