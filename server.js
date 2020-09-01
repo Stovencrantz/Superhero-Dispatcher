@@ -1,7 +1,7 @@
 // Dependencies
 // =============================================================
 var express = require("express");
-
+var api = require("./controllers/api-controller.js");
 // Sets up the Express App
 // =============================================================
 var app = express();
@@ -12,7 +12,8 @@ app.use(express.json());
 
 // Static directory to be served
 app.use(express.static("app/public"));
-
+// taking routes that exist in api-controller and mounting them on /api
+app.use("/api", api);
 // Routes
 // =============================================================
 // require("./app/routes/api-routes.js")(app);
