@@ -17,16 +17,12 @@ $("#searchBtn").on("click", (event) => {
 
   function getSuperHero(superFinal) {
     var baseUrl = "http://localhost:8080/api/hero/";
-    // var volonnninoToken = "10223684788131570";
-    // var searchParam = "/search/" + superFinal;
-    // var superheroQuery = baseUrl + volonnninoToken + searchParam;
-    // console.log("supeheroQuery: ", superheroQuery);
 
     $.ajax({
       url: baseUrl + superFinal,
-      method: "GET",
-    }).then(function (res) {
-      // console.log(("res: ", res));
+      method: "POST",
+    }).then(function (err) {
+      if (err) throw err;
     });
   }
 });

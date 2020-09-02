@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS hero_db;
+
 CREATE DATABASE hero_db;
 use hero_db;
 
@@ -11,6 +13,7 @@ create table heroes(
   durability int not null,
   power int not null,
   combat int not null,
+  total_power int not null,
   alignment varchar(50),
   img_url varchar(1000),
 
